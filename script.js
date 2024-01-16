@@ -17,7 +17,7 @@ function updateWeather(){
     }else{   
         document.getElementById('city').textContent = "Current location: " + weatherInputBox.value;
         inputVal=weatherInputBox.value;
-        geoUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${inputVal}&limit=1&appid=${apiKey}`;
+        geoUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${inputVal}&limit=1&appid=${apiKey}`;
         fetch(geoUrl)
         .then(response => response.json())
         .then(data => {
