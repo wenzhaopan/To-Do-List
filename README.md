@@ -1,8 +1,13 @@
 # Weather To Do This
 
+Before you read the instructions, please note that this site is limited to 60 weather searches per minute. 
+If you would like to use it more, please feel free to download the code and replace the const apiKey variable in the "script.js" file with your own API key. 
+You can get your own API key by going to https://openweathermap.org/ and making your own account. You can then choose your own plan for how many API calls you would like to make!
+
+
 Access the site here: https://wenzhaopan.github.io/Weather-To-Do-This/
 
-You will be taken to a page that looks like this
+Upon clicking the link, you will be taken to a page that looks like this
 
 ![image](https://github.com/wenzhaopan/Weather-To-Do-This/assets/140751736/73602c41-82a6-4ff7-bb49-c49b10c1a56d)
 
