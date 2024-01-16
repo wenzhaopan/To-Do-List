@@ -93,7 +93,7 @@ function AddTask(){
     }else{
         let li=document.createElement("li");
         if(precipitation){
-            li.innerHTML = inputBox.value + ' (' + outdoorText + ')' + " DONT DO THIS RN";
+            li.innerHTML = inputBox.value + ' (' + outdoorText + ')';
         }else{
             li.innerHTML = inputBox.value + ' (' + outdoorText + ')';
         }
