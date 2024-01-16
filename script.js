@@ -22,7 +22,7 @@ function updateWeather(){
         .then(response => response.json())
         .then(data => {
             temp1=data[0].lat;
-            temp2=data[0].lon;
+            temp2=data[0].lon;  
             lat=temp1.toString();
             lon=temp2.toString();
             weatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`;
@@ -63,7 +63,7 @@ function updateTasks(){
         var substr = s.substring(start+1, end);
         if(precipitation && substr === "Outdoors" && !(taskItems[i].classList.contains("notRN"))) taskItems[i].classList.add("notRN");
         else if(precipitation && substr === "Indoors" && taskItems[i].classList.contains("notRN")) taskItems[i].classList.remove("notRN");
-        else if(taskItems[i].classList.contains("notRN")) taskItems[i].classList.remove("notRN");
+        else if(!(precipitation) && taskItems[i].classList.contains("notRN")) taskItems[i].classList.remove("notRN");
     }
     saveData();
 }
